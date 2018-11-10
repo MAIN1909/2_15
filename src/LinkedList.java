@@ -11,6 +11,7 @@ public class LinkedList implements List {
 
     private Element first = null;
 
+
     @Override
     public void add(Integer elem) {
         Element tmp = new Element(elem);
