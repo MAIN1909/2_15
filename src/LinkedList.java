@@ -21,6 +21,7 @@ public class LinkedList implements List {
             while (prob.next != null) {
                 prob = prob.next;
             }
+
             prob.next = tmp;
         }
     }
