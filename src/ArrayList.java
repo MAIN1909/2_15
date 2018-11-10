@@ -6,6 +6,7 @@ public class ArrayList implements List {
         Integer[] tmp = new Integer[src.length + 1];
         System.arraycopy(src, 0, tmp, 0, src.length);
         tmp[tmp.length - 1] = elem;
+
         src = tmp;
     }
 
