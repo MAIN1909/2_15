@@ -16,6 +16,8 @@ public class LinkedList implements List {
         Element tmp = new Element(elem);
         if (first == null) {
             first = tmp;
+
+
         } else {
             Element prob = first;
             while (prob.next != null) {
