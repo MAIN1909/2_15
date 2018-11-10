@@ -16,6 +16,7 @@ public class ArrayList implements List {
         tmp[index] = elem;
         System.arraycopy(src, index, tmp, index + 1, src.length - index);
         src = tmp;
+
     }
 
     @Override
