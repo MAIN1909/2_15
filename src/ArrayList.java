@@ -25,6 +25,10 @@ public class ArrayList implements List {
 
     @Override
     public Integer remove(int index) {
+        Integer[] tmp = new Integer[src.length + 1];
+        System.arraycopy(src, 0, tmp, 0, index - 1);
+        System.arraycopy(src, index + 1, tmp, index, src.length - index);
+        src = tmp;
         return null;
     }
 
@@ -60,11 +64,21 @@ public class ArrayList implements List {
 
     @Override
     public int lastIndexOf(Integer elem) {
-        return 0;
+        for (int i = src.length - 1; i > 0; i--) {
+            if (src[i].equals(elem)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     @Override
     public boolean contains(Integer elem) {
+        for (int i = src.length - 1; i > 0; i--) {
+            if (src[i].equals(elem)) {
+                return true;
+            }
+        }
         return false;
     }
 }
