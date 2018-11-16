@@ -31,6 +31,8 @@ public class LinkedList implements List {
         if (index == 0) {
             tmp.next = first;
             first = tmp;
+
+
         } else {
             Element prob = first;
             for (int i = 1; i < index; i++) {
