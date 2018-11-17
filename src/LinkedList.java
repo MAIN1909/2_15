@@ -54,7 +54,8 @@ public class LinkedList implements List {
 
     @Override
     public Integer get(int index) {
-        return null;
+
+
     }
 
     @Override
